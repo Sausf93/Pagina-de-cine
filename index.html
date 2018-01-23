@@ -1,0 +1,85 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pagina de Dor</title>
+</head>
+<body>
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Cartelera</a>
+        </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active  col-md-8" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="contenedor">
+                <p>
+                    <img src="http://www.yelmocines.es/content/img/movies/posters/2023/1/1/2023.jpg" id="peli1" title="Los Archivos del Pentágono"
+                        alt="Los Archivos del Pentágono">
+                    <label for="peli1">Los Archivos del Pentágono</label>
+                    <button type="button" class="btn btn-primary" style="margin-left:35px;" onclick="formulario('http://www.yelmocines.es/content/img/movies/posters/2023/1/1/2023.jpg', 'Los Archivos del Pentágono', 'En junio de 1971, los principales periódicos de EE.UU., entre los que se encontraban The New York Times y The Washington Post, tomaron una valiente posición en favor de la libertad de expresión, informando sobre los documentos del Pentágono y el encubrimiento masivo de secretos por parte del gobierno, que había durado cuatro décadas y cuatro presidencias estadounidenses. En ese momento, Katherine Graham (Meryl Streep), primera mujer editora del Post, y el director Ben Bradlee (Tom Hanks) intentaba relanzar un periódico en decadencia. Juntos decidieron tomar la audaz decisión de apoyar al The New York Times y luchar contra el intento de la Administración Nixon de restringir la primera enmienda... Historia basada en los documentos del Post que recogían información clasificada sobre la Guerra de Vietnam. Su publicación generó un enorme debate sobre la libertad de expresión y acabó en una dura batalla legal ante el Tribunal Supremo. (FILMAFFINITY)')" id="peli1">Votar</button>
+                </p>
+                <p>
+                    <img src="http://www.yelmocines.es/content/img/movies/posters/1823/1/1/1823.jpg"  title="120 Pulsaciones por Minuto" alt="120 Pulsaciones por Minuto">
+                    <label for="peli2">120 Pulsaciones por Minuto</label>
+                    <button type="button" class="btn btn-primary" onclick="formulario('http://www.yelmocines.es/content/img/movies/posters/1823/1/1/1823.jpg', '120 Pulsaciones por Minuto', 'Francia, principios de los años 90. La vida cotidiana para la comunidad gay estaba condicionada por el miedo. Miedo al rechazo, al desprecio, y al SIDA. Esta enfermedad representa una plaga letal que se ceba especialmente con la población homosexual. Para responder a esta situación, nace en París el Act Up, un grupo de activistas que, utilizando métodos de guerrilla, dedica sus esfuerzos a luchar por dar visibilidad y lograr una mayor implicación del gobierno y de las farmacéuticas en la lucha contra el SIDA. Claro que, dentro de esta asociación descubriremos los desacuerdos entre algunos de sus miembros, ya que hay quienes no están de acuerdo en forzar los límites y radicalizarse.')" style="margin-left:35px;" id="peli2">Votar</button>
+                </p>
+                <p>
+                    <img src="http://www.yelmocines.es/content/img/movies/posters/2019/1/1/2019.jpg" title="El Instante Más Oscuro" alt="El Instante Más Oscuro">
+                    <label for="peli3">El Instante Más Oscuro</label>
+                    <button type="button" class="btn btn-primary" onclick="formulario('http://www.yelmocines.es/content/img/movies/posters/2019/1/1/2019.jpg', 'El Instante Más Oscuro', 'Gran Bretaña, Segunda Guerra Mundial. Pocos días después de convertirse en Primer Ministro, Winston Churchill (Gary Oldman) debe tomar una difícil decisión. En pleno avance de las tropas nazis por toda Europa Occidental, cuando la amenaza de invasión es inminente, Churchill tendrá que elegir entre luchar contra Hitler o aceptar el acuerdo de paz que este le ofrece pactar. A pesar de la presión a la que estuvo sometido, ya que su propio partido llegó a conspirar en su contra y el rey Jorge VI (Ben Mendelsohn) era muy escéptico al respecto, la firme negativa de Churchill a aceptar la derrota, la rendición o un acuerdo de paz sirvieron como inspiración a la resistencia británica. Durante los difíciles primeros años de la Guerra, cuando el Reino Unido se quedó solo en su firme oposición contra la Alemania nazi, Churchill tuvo que soportar su hora más oscura, reunir a una nación, luchar por los ideales y la libertad, y tratar de cambiar el curso de la historia mundial.')" style="margin-left:35px;" id="peli3">Votar</button>
+                </p>
+                <p>
+                    <img src="http://www.yelmocines.es/content/img/movies/posters/2026/1/1/2026.jpg" title="El Extranjero" alt="El Extranjero">
+                    <label for="peli4">El Extranjero</label>
+                    <button type="button" class="btn btn-primary" style="margin-left:35px;" onclick="formulario('http://www.yelmocines.es/content/img/movies/posters/2026/1/1/2026.jpg', 'El Extranjero' , 'Gran Bretaña, Segunda Guerra Mundial. Pocos días después de convertirse en Primer Ministro, Winston Churchill (Gary Oldman) debe tomar una difícil decisión. En pleno avance de las tropas nazis por toda Europa Occidental, cuando la amenaza de invasión es inminente, Churchill tendrá que elegir entre luchar contra Hitler o aceptar el acuerdo de paz que este le ofrece pactar. A pesar de la presión a la que estuvo sometido, ya que su propio partido llegó a conspirar en su contra y el rey Jorge VI (Ben Mendelsohn) era muy escéptico al respecto, la firme negativa de Churchill a aceptar la derrota, la rendición o un acuerdo de paz sirvieron como inspiración a la resistencia británica. Durante los difíciles primeros años de la Guerra, cuando el Reino Unido se quedó solo en su firme oposición contra la Alemania nazi, Churchill tuvo que soportar su hora más oscura, reunir a una nación, luchar por los ideales y la libertad, y tratar de cambiar el curso de la historia mundial.')" id="peli4">Votar</button>
+                </p>
+                <p>
+                    <img src="http://www.yelmocines.es/content/img/movies/posters/2021/1/1/2021.jpg" title="Tres Anuncios en las Afueras" alt="Tres Anuncios en las Afueras">
+                    <label for="peli5">Tres Anuncios en las Afueras</label>
+                    <button type="button" class="btn btn-primary" style="margin-left:35px;" onclick="formulario('http://www.yelmocines.es/content/img/movies/posters/2021/1/1/2021.jpg', 'Tres Anuncios en las Afueras' ,'En Ebbing, Misuri, un pueblo del Medio Oeste de Estados Unidos, Mildred Hayes (Frances McDormand) decide gastarse todos sus ahorros en contratar tres vallas publicitarias para poner en evidencia la incompetencia de la policía. Han pasado ya varios meses desde la violación y asesinato de su hija y aún no se sabe nada acerca de lo ocurrido. Estas tres vallas a la entrada del pueblo, con mensajes muy controvertidos sobre el jefe de policía, William Willoughby (Woody Harrelson), servirán para divulgar un recordatorio, el de un crimen sin resolver, y constatar una evidencia, que nadie ha sido detenido. Las consecuencias serán una guerra abierta contra la policía del pueblo, y una agria respuesta por parte de sus habitantes.')" id="peli5">Votar</button>
+                </p>
+                <p>
+                    <img src="http://www.yelmocines.es/content/img/movies/posters/2012/1/1/2012.jpg" title="Que Baje Dios y lo Vea" alt="Que Baje Dios y lo Vea">
+                    <label for="peli6">Que Baje Dios y lo Vea</label>
+                    <button type="button" class="btn btn-primary" style="margin-left:35px;" onclick="formulario('http://www.yelmocines.es/content/img/movies/posters/2012/1/1/2012.jpg', 'Que Baje Dios y lo Vea', 'Hacer lo que sea para evitar un desahucio. Los monjes de un monasterio en quiebra deberán convertirse en futbolistas y entrenar con sotana. Su única oportunidad de salvación será ganar la Champion Clerum, un torneo de fútbol europeo para religiosos. Claro que, el problema es que los religiosos de esta congregación no juegan nada bien al fútbol. Para salvar su casa, y evitar que el monasterio se convierta en un hotel de lujo, los monjes tendrán que hacer toda una gesta deportiva, y para ello necesitarán algo así como un milagro para ganar algún partido. ')" id="peli6">Votar</button>
+                </p>
+                <p>
+                    <img src="http://www.yelmocines.es/content/img/movies/posters/2010/1/1/2010.jpg" title="Insidious: La Última Llave" alt="Insidious: La Última Llave">
+                    <label for="peli7">Insidious: La Última Llave</label>
+                    <button type="button" class="btn btn-primary" style="margin-left:35px;" onclick="formulario('http://www.yelmocines.es/content/img/movies/posters/2010/1/1/2010.jpg', 'Insidious: La Última Llave', '\'Insidious Capítulo 4\' es la cuarta entrega de una de las sagas de terror más famosas de la actualidad. En las dos primeras películas pudimos seguir la historia de Josh y Renai Lambert, quienes empiezan a experimentar extrañas visiones tras el coma sufrido por su hijo. La tercera fue una precuela que narró los orígenes sobre la presencia sobrenatural que asoló a la familia Lambert, donde el protagonismo recae en una famosa médium llamada Elise Rainier (Lin Shaye), que acepta ayudar a un joven acosado por una presencia. La nueva entrega de \'Insidious\' cuenta de nuevo con un guión de Leigh Whannell, guionista de todas las películas y director de \'Insidious Capítulo 3\', y con Adam Robitel como director. ')" id="peli7">Votar</button>
+                </p>
+                <p>
+                    <img src="http://www.yelmocines.es/content/img/movies/posters/2011/1/1/2011.jpg" title="Molly's Game" alt="Molly's Game">
+                    <label for="peli8">Molly's Game</label>
+                    <button type="button" class="btn btn-primary" style="margin-left:35px;" onclick="formulario('http://www.yelmocines.es/content/img/movies/posters/2011/1/1/2011.jpg', 'Molly\'s Game', 'La enigmática y brillante Molly Bloom (Jessica Chastain), después de abandonar el esquí profesional, decide mudarse a Los Ángeles con la intención de conseguir un trabajo como camarera y disfrutar del cálido clima durante un tiempo. Por un cúmulo de casualidades, además de sus habilidades empresariales sin explotar, Bloom empezó a organizar las más exclusivas apuestas de póker clandestinas en las que participaban estrellas de Hollywood, deportistas, empresarios y la mafia rusa. Durante una década fue la impulsora de este imperio de partidas de póker, hasta que el FBI la investigó por sus conexiones con el crimen. El prestigioso abogado Charlie Jaffey (Idris Elba) será su única posibilidad para librarse de la cárcel.')" id="peli8">Votar</button>
+                </p>
+                <p>
+                    <img src="http://www.yelmocines.es/content/img/movies/posters/1871/1/1/1871.jpg" title="El Gran Showman"  alt="El Gran Showman">
+                    <label for="peli9">El Gran Showman</label>
+                    <button type="button" class="btn btn-primary" style="margin-left:35px;" onclick="formulario('http://www.yelmocines.es/content/img/movies/posters/1871/1/1/1871.jpg', 'El Gran Showman' ,'Estados Unidos, siglo XIX. P.T. Barnum (Hugh Jackman) acaba de perder su trabajo de oficinista porque la empresa para la que trabajaba se ha ido a la bancarrota. Deseoso de ofrecer a su esposa Charity (Michelle Williams) y a sus dos hijas la vida que siempre les había prometido, Barnum se embarca en un proyecto colosal: crear un gran y asombroso espectáculo circense. Para ello, este inventor del show bussines buscará artistas únicos, desde enanos, a mujeres barbudas, equilibristas y toda clase de shows imaginativos. Su lema: para hacer algo nuevo hay que hacer algo poco convencional. ')" id="peli9">Votar</button>
+                </p>
+                <p>
+                    <img src="http://www.yelmocines.es/content/img/movies/posters/1854/1/1/1854.jpg" title="Dando la Nota 3" alt="Dando la Nota 3">
+                    <label for="peli10">El Gran Showman</label>
+                    <button type="button" class="btn btn-primary" style="margin-left:35px;" onclick="formulario('http://www.yelmocines.es/content/img/movies/posters/1871/1/1/1871.jpg', 'El Gran Showman' ,'Estados Unidos, siglo XIX. P.T. Barnum (Hugh Jackman) acaba de perder su trabajo de oficinista porque la empresa para la que trabajaba se ha ido a la bancarrota. Deseoso de ofrecer a su esposa Charity (Michelle Williams) y a sus dos hijas la vida que siempre les había prometido, Barnum se embarca en un proyecto colosal: crear un gran y asombroso espectáculo circense. Para ello, este inventor del show bussines buscará artistas únicos, desde enanos, a mujeres barbudas, equilibristas y toda clase de shows imaginativos. Su lema: para hacer algo nuevo hay que hacer algo poco convencional. ')" id="peli10">Votar</button>
+                </p>
+            </div>
+
+        </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/application.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

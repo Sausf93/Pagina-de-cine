@@ -1,0 +1,73 @@
+#profile-sesion{
+    position: absolute;
+    left: 85%;
+}
+
+#home{
+    position: relative;
+    top: 20px;
+    margin: 0 auto;
+}
+
+.contenedor>p{
+    width: 30%;
+}
+.contenedor>button{
+    position: relative;
+    left: 20px;
+}
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.contenedordos{
+    position: relative;
+    top: 50px;
+    margin: 0 auto;
+    border: blue 2px solid;
+    border-radius: 1em;
+}
+
+.contenedordos>img{
+    margin-bottom: 20px;
+}
+
+.contenedordos>input{
+    margin:10px;
+}
+
+#graficos{
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+}
+.contenedortres{
+    position: relative;
+    top: 50px;
+    margin: 0 auto;
+    border: blue 2px solid;
+    border-radius: 1em;
+}
+h1{
+    text-align: center;
+}
+
+.container{
+    margin: 0 auto;
+    width: 100%;
+}
+
+input{
+    margin: 20px;
+}
+.botones{
+    width: 580px;
+    margin: 0 auto;
+}
+
+.botones>#volver{
+    position: relative;
+    left: 30%;
+}
