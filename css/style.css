@@ -71,3 +71,30 @@ input{
     position: relative;
     left: 30%;
 }
+
+.btn-group{
+    position: relative;
+    left: 36%;
+}
+
+#donut{
+    width: 30px;
+    height: 30px;
+}
+
+.fa{
+    position: relative;
+    top: 5px;
+}
+#inputnombre{
+    position: relative;
+    left: -20px;
+}
+#inputcorreo{
+    position: relative;
+    left: -20px;
+}
+#inputnumero{
+    position: relative;
+    left: -20px;
+}

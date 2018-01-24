@@ -7,6 +7,8 @@
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <title>Estadisticas de las Votaciones</title>
 </head>
@@ -20,9 +22,22 @@
 
     </div>
     <div class="botones">
-        <input class="btn btn-primary" id="donut" onclick="donut()" type="button" value="Grafico de donut">
-        <input class="btn btn-primary" id="queso" onclick="queso()" type="button" value="Grafico de queso">
-        <input class="btn btn-primary" id="histograma" onclick="histograma()" type="button" value="Grafico de barras">
+        <!-- <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" onclick="donut()" title="boton para mostrar el grafico en forma de donut" class="btn btn-secondary"><i> <img id="donut" src="../donut.png"> </i></button>
+            <button type="button" onclick="queso()" title="boton para mostrar el grafico en forma de tartas o de queso" class="btn btn-secondary"><i class="fa fa-pie-chart"></i></button>
+            <button type="button" onclick="histograma()" title="boton para mostrar el grafico en forma de barras" class="btn btn-secondary"> <i class="material-icons">assessment</i></button>
+        </div>  Hecho en botones -->
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+            <label class="btn btn-secondary">
+                <input type="radio" onchange="donut()" name="options" id="option1"title="boton para mostrar el grafico en forma de donut" autocomplete="off" > <i> <img id="donut" src="../donut.png"> </i>
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" onchange="queso()" name="options" id="option2" title="boton para mostrar el grafico en forma de tartas o de queso" autocomplete="off"> <i class="fa fa-pie-chart"></i>
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" onchange="histograma()" name="options" id="option3" title="boton para mostrar el grafico en forma de barras" autocomplete="off"> <i class="material-icons">assessment</i>
+            </label>
+        </div>
         <br>
         <input class="btn btn-primary" onclick="volver()" id="volver" type="button" value="Volver a elegir pelicula">
     </div>
@@ -39,3 +54,5 @@
 </body>
 
 </html>
+
+<!-- Onsumit para el formulario haga el evento si cumple los patrones. -->

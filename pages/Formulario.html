@@ -25,17 +25,27 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form id="submit" action="estadisticas.html">
                         <div class="form-group">
                             <label for="Nombre">Nombre</label>
-                            <input type="Nombre" class="form-control" maxlength="30" required pattern="[A-Za-z]*" id="Nombre" aria-describedby="Nombre" placeholder="Introducir nombre o usuario">
+                            <input type="text" id="inputnombre" class="form-control" maxlength="30" required pattern="[A-Za-z]*" id="Nombre" aria-describedby="Nombre" placeholder="Introducir nombre o usuario">
                             <small id="Nombre" class="form-text text-muted">Introducir nombre de usuario para votar y participar en el sorteo</small>
                         </div>
-                        <button type="button" id="submit" class="btn btn-primary">Votar</button>
+                        <div class="form-group">
+                            <label for="Correo">Correo Electronico</label>
+                            <input type="Email" required class="form-control" id="inputcorreo"  aria-describedby="Correo" placeholder="Correo Electronico">
+                            <small id="Correo" class="form-text text-muted">Correo Electronico</small>
+                          </div>
+                          <div class="form-group">
+                            <label for="Numero">Numero de telefono</label>
+                            <input type="number" id="inputnumero" class="form-control" maxlength="9" required pattern="[0-9]*" id="Numero" aria-describedby="Numero" placeholder="Numero de Telefono">
+                            <small id="Numero" class="form-text text-muted">Introducir numero de telefono</small>
+                        </div>
+                        <button type="submit"  class="btn btn-primary">Votar</button>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button"  class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>

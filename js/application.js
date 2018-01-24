@@ -1,11 +1,16 @@
-var nombrePelicula, numeroVotos, votos, prueba;
+var nombrePelicula, numeroVotos, votos, prueba,nombre, correoElectronico, numeroTelefono, personas;
 var arrayPeliculas = new Array();
 
 Datos = function (nombrePelicula, numeroVotos) {
     this.nombrePelicula = nombrePelicula;
     this.numeroVotos = numeroVotos;
-
 };
+
+cliente= function (nombre, correoElectronico, numeroTelefono){
+    this.nombre=nombre;
+    this.correoElectronico=correoElectronico;
+    this.numeroTelefono=numeroTelefono;
+}
 
 function formulario(img, nombrePelicula, sinopsis) {
     window.location.href = "pages/Formulario.html";
@@ -24,8 +29,18 @@ function paginaDos() {
     $("#pelicula").append("<hr></hr>");
     $("#pelicula").append("<img src='" + imagen + "'>");
     $("#pelicula").append("<p>" + sinop + "</p>");
-    $("#submit").on('click', function () {
-
+    $("#submit").submit(function () {
+        var persona = new cliente($("#inputnombre").val(), $("#inputcorreo").val(), $("#inputnumero").val());
+        if(localStorage.getItem("personas")==null){
+            personas=[];
+            personas.push(persona);
+            localStorage.setItem("personas",JSON.stringify(personas));
+        }
+        else{
+            personas=JSON.parse(localStorage.getItem("personas"));
+            personas.push(persona);
+            localStorage.setItem("personas",JSON.stringify(personas));
+        }
         if (JSON.parse(localStorage.getItem("Peliculas")) == null) {
             votos = 0;
         } else {
@@ -54,7 +69,7 @@ function paginaDos() {
         }
 
         localStorage.setItem("Peliculas", JSON.stringify(arrayPeliculas));
-        window.location.href = "estadisticas.html";
+        window.location.replace("estadisticas.html");
     });
 }
 
