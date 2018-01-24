@@ -26,9 +26,9 @@
     
     .contenedordos{
         position: relative;
-        top: 50px;
+        top: 120px;
         margin: 0 auto;
-        border: blue 2px solid;
+        border:#2C3E50 2px solid;
         border-radius: 1em;
     }
     
@@ -132,3 +132,18 @@
     }
     
 } 
+
+.tab-content{
+    margin-top: 100px;
+}
+
+footer{
+    margin-top: 200px;
+    position: relative;
+    bottom: 0px;
+}
+
+#queso{
+    position: relative;
+    top: 0px;
+}

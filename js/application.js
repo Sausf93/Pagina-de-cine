@@ -146,3 +146,7 @@ function histograma() {
     tipoGrafico = false;
     estadisticas();
 }
+
+function paginaprincipal(){
+    window.location.href="../index.html";
+}

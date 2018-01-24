@@ -7,10 +7,27 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/freelancer.css">
     <title>Formulario</title>
 </head>
 
 <body onload="paginaDos()">
+        <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+                <div class="container">
+                  <a class="navbar-brand js-scroll-trigger" onclick="paginaprincipal()" href="#page-top">Página principal</a>
+                  <button  class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        Graficos
+                        <i class="fa fa-bars"></i>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                          <li class="nav-item mx-0 mx-lg-1">
+                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="estadisticas.html">Graficos</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
     <div class="contenedordos  col-xs-2 col-sm-2 col-sm-8" id="pelicula">
         <input class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModalCenter" value="Votar">
         <input class="btn btn-primary" onclick="volver()"   type="button" value="Volver a elegir pelicula">
@@ -50,6 +67,21 @@
             </div>
         </div>
     </div>
+    <footer class="footer text-center">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 mb-5 mb-lg-0">
+                  <h4 class="text-uppercase mb-4">Direccion</h4>
+                  <p class="lead mb-0">Calle Jorge Manrriquez
+                    <br>Numero 4b, 38005</p>
+                </div>
+                <div class="col-md-6">
+                  <h4 class="text-uppercase mb-4">Desarrollo de aplicaciones web</h4>
+                  <p class="lead mb-0">Trabajo de Dor</p>
+                </div>
+              </div>
+            </div>
+          </footer>
 
 
 
