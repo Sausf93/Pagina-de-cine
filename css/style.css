@@ -1,100 +1,134 @@
-#profile-sesion{
-    position: absolute;
-    left: 85%;
+
+@media screen and (max-width: 2580px){
+    #profile-sesion{
+        position: absolute;
+        left: 85%;
+    }
+    
+    #home{
+        position: relative;
+        top: 20px;
+        margin: 0 auto;
+    }
+    
+    .contenedor>p{
+        width: 30%;
+    }
+    .contenedor>button{
+        position: relative;
+        left: 20px;
+    }
+    .contenedor{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    
+    .contenedordos{
+        position: relative;
+        top: 50px;
+        margin: 0 auto;
+        border: blue 2px solid;
+        border-radius: 1em;
+    }
+    
+    .contenedordos>img{
+        margin-bottom: 20px;
+    }
+    
+    .contenedordos>input{
+        margin:10px;
+    }
+    
+    #graficos{
+        width: 600px;
+        height: 600px;
+        margin: 0 auto;
+        position: relative;
+        left: 60px;
+    }
+    .contenedortres{
+        position: relative;
+        top: 50px;
+        margin: 0 auto;
+        border: blue 2px solid;
+        border-radius: 1em;
+    }
+    h1{
+        text-align: center;
+    }
+    
+    .container{
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    input{
+        margin: 20px;
+    }
+    .botones{
+        width: 580px;
+        margin: 0 auto;
+    }
+    
+    .botones>#volver{
+        position: relative;
+        left: 30%;
+    }
+    
+    .btn-group{
+        position: relative;
+        left: 36%;
+    }
+    
+    #donut{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .fa{
+        position: relative;
+        top: 5px;
+    }
+    #inputnombre{
+        position: relative;
+        left: -20px;
+    }
+    #inputcorreo{
+        position: relative;
+        left: -20px;
+    }
+    #inputnumero{
+        position: relative;
+        left: -20px;
+    }
 }
 
-#home{
-    position: relative;
-    top: 20px;
-    margin: 0 auto;
-}
 
-.contenedor>p{
-    width: 30%;
-}
-.contenedor>button{
-    position: relative;
-    left: 20px;
-}
-.contenedor{
-    display: flex;
-    flex-wrap: wrap;
-}
+@media screen and (max-width: 480px){
 
 
-.contenedordos{
-    position: relative;
-    top: 50px;
-    margin: 0 auto;
-    border: blue 2px solid;
-    border-radius: 1em;
-}
+    img{
+        width: 100px;
+    }
+    .botones{
+        position: relative;
+        left: -80px;;
+    }
+    #graficos{
+        width: 400px;
+        height: 400px;
+    }
+} 
+@media screen and (max-width: 390px){
 
-.contenedordos>img{
-    margin-bottom: 20px;
-}
-
-.contenedordos>input{
-    margin:10px;
-}
-
-#graficos{
-    width: 600px;
-    height: 600px;
-    margin: 0 auto;
-}
-.contenedortres{
-    position: relative;
-    top: 50px;
-    margin: 0 auto;
-    border: blue 2px solid;
-    border-radius: 1em;
-}
-h1{
-    text-align: center;
-}
-
-.container{
-    margin: 0 auto;
-    width: 100%;
-}
-
-input{
-    margin: 20px;
-}
-.botones{
-    width: 580px;
-    margin: 0 auto;
-}
-
-.botones>#volver{
-    position: relative;
-    left: 30%;
-}
-
-.btn-group{
-    position: relative;
-    left: 36%;
-}
-
-#donut{
-    width: 30px;
-    height: 30px;
-}
-
-.fa{
-    position: relative;
-    top: 5px;
-}
-#inputnombre{
-    position: relative;
-    left: -20px;
-}
-#inputcorreo{
-    position: relative;
-    left: -20px;
-}
-#inputnumero{
-    position: relative;
-    left: -20px;
-}
+    h1{
+        position: relative;
+        left: 20px;
+    }
+    #graficos{
+        position: relative;
+        left: 20px;
+    }
+    
+} 
