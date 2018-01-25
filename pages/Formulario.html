@@ -12,25 +12,26 @@
 </head>
 
 <body onload="paginaDos()">
-        <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
-                <div class="container">
-                  <a class="navbar-brand js-scroll-trigger" onclick="paginaprincipal()" href="#page-top">Página principal</a>
-                  <button  class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                        Graficos
-                        <i class="fa fa-bars"></i>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarResponsive">
-                        <ul class="navbar-nav ml-auto">
-                          <li class="nav-item mx-0 mx-lg-1">
-                            <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="estadisticas.html">Graficos</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </nav>
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" onclick="paginaprincipal()" href="#page-top">Página principal</a>
+            <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse"
+                data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Graficos
+                <i class="fa fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item mx-0 mx-lg-1">
+                        <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="estadisticas.html">Graficos</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <div class="contenedordos  col-xs-2 col-sm-2 col-sm-8" id="pelicula">
         <input class="btn btn-primary" type="button" data-toggle="modal" data-target="#exampleModalCenter" value="Votar">
-        <input class="btn btn-primary" onclick="volver()"   type="button" value="Volver a elegir pelicula">
+        <input class="btn btn-primary" onclick="volver()" type="button" value="Volver a elegir pelicula">
     </div>
     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -45,43 +46,45 @@
                     <form id="submit" action="estadisticas.html">
                         <div class="form-group">
                             <label for="Nombre">Nombre</label>
-                            <input type="text" id="inputnombre" class="form-control" maxlength="30" required pattern="[A-Za-z]*" id="Nombre" aria-describedby="Nombre" placeholder="Introducir nombre o usuario">
+                            <input type="text" id="inputnombre" class="form-control" maxlength="30" required pattern="[A-Za-z]*" id="Nombre" aria-describedby="Nombre"
+                                placeholder="Introducir nombre o usuario">
                             <small id="Nombre" class="form-text text-muted">Introducir nombre de usuario para votar y participar en el sorteo</small>
                         </div>
                         <div class="form-group">
                             <label for="Correo">Correo Electronico</label>
-                            <input type="Email" required class="form-control" id="inputcorreo"  aria-describedby="Correo" placeholder="Correo Electronico">
+                            <input type="Email" required class="form-control" id="inputcorreo" aria-describedby="Correo" placeholder="Correo Electronico">
                             <small id="Correo" class="form-text text-muted">Correo Electronico</small>
-                          </div>
-                          <div class="form-group">
+                        </div>
+                        <div class="form-group">
                             <label for="Numero">Numero de telefono</label>
-                            <input type="number" id="inputnumero" class="form-control" maxlength="9" required pattern="[0-9]*" id="Numero" aria-describedby="Numero" placeholder="Numero de Telefono">
+                            <input type="number" id="inputnumero" class="form-control" maxlength="9" required pattern="[0-9]*" id="Numero" aria-describedby="Numero"
+                                placeholder="Numero de Telefono">
                             <small id="Numero" class="form-text text-muted">Introducir numero de telefono</small>
                         </div>
-                        <button type="submit"  class="btn btn-primary">Votar</button>
+                        <button type="submit" class="btn btn-primary">Votar</button>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <button type="button"  class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
     </div>
     <footer class="footer text-center">
-            <div class="container">
-              <div class="row">
+        <div class="container">
+            <div class="row">
                 <div class="col-md-6 mb-5 mb-lg-0">
-                  <h4 class="text-uppercase mb-4">Direccion</h4>
-                  <p class="lead mb-0">Calle Jorge Manrriquez
-                    <br>Numero 4b, 38005</p>
+                    <h4 class="text-uppercase mb-4">Direccion</h4>
+                    <p class="lead mb-0">Calle Jorge Manrriquez
+                        <br>Numero 4b, 38005</p>
                 </div>
                 <div class="col-md-6">
-                  <h4 class="text-uppercase mb-4">Desarrollo de aplicaciones web</h4>
-                  <p class="lead mb-0">Trabajo de Dor</p>
+                    <h4 class="text-uppercase mb-4">Desarrollo de aplicaciones web</h4>
+                    <p class="lead mb-0">Trabajo de Dor</p>
                 </div>
-              </div>
             </div>
-          </footer>
+        </div>
+    </footer>
 
 
 

@@ -25,10 +25,10 @@ function paginaDos() {
     var imagen = localStorage.getItem("imagen");
     var nombrePel = localStorage.getItem("nombre");
     var sinop = localStorage.getItem("sinopsis");
-    $("#pelicula").append("<h2>" + nombrePel + "</h2>");
+    $("#pelicula").append("<h2 title='"+nombrePel+"'>" + nombrePel + "</h2>");
     $("#pelicula").append("<hr></hr>");
-    $("#pelicula").append("<img src='" + imagen + "'>");
-    $("#pelicula").append("<p>" + sinop + "</p>");
+    $("#pelicula").append("<img alt='Imagen de la pelicula seleccionada' src='" + imagen + "'>");
+    $("#pelicula").append("<p title='"+sinop+"'>" + sinop + "</p>");
     $("#submit").submit(function () {
         var persona = new cliente($("#inputnombre").val(), $("#inputcorreo").val(), $("#inputnumero").val());
         if(localStorage.getItem("personas")==null){
